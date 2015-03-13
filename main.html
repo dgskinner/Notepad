@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+<body>
+	<div id="notepad" ng-app="notepadApp" ng-controller="notepadController">
+		<h1>Notepad</h1>
+		<textarea ng-model="noteText"></textarea>
+		<p>characters remaining: {{ charLeft() }}</p>
+		<button ng-click="saveNote()">Save</button>
+		<button>Clear</button>
+	</div>
+	
+	<script src="notepad_app.js"></script>
+	<script src="notepad_controller.js"></script>
+</body>
+
+</html>
