@@ -10,7 +10,7 @@
 		<textarea ng-model="noteText"></textarea>
 		<p>characters remaining: {{ charLeft() }}</p>
 		<button ng-click="saveNote()">Save</button>
-		<button>Clear</button>
+		<button ng-click="clearNote()">Clear</button>
 		
 		<h2>Saved Notes:</h2>
 		<p ng-repeat="note in savedNotes">{{ note }}</p>
