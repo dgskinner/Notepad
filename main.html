@@ -11,6 +11,9 @@
 		<p>characters remaining: {{ charLeft() }}</p>
 		<button ng-click="saveNote()">Save</button>
 		<button>Clear</button>
+		
+		<h2>Saved Notes:</h2>
+		<p ng-repeat="note in savedNotes">{{ note }}</p>
 	</div>
 	
 	<script src="notepad_app.js"></script>
